@@ -10,8 +10,11 @@ public:
 	TrieNode* left, * mid, * right;
 	char c;
 
-	TrieNode(char _c) :c(_c), left(NULL), mid(NULL), right(NULL), is_end(false) {
-
+	TrieNode(char _c) {
+		this->c = c; 
+		this->left = NULL; 
+		this->mid = NULL; 
+		this->right = NULL; 
 	}
 	~TrieNode() {
 		if (left)
