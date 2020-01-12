@@ -41,6 +41,5 @@ public:
 	void insert(string word);
 	TrieNode* get(TrieNode* node, const string& str, int index);
 	bool search(string word);
-
-
+	bool startsWith(string prefix); 
 };
