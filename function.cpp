@@ -44,3 +44,8 @@ bool SpellChecker::search(string word) {
 
 	return p && p->is_end;
 }
+bool SpellChecker::startsWith(string prefix) {
+	TrieNode* p = get(root, prefix, 0);
+	
+	return p != NULL;
+}
